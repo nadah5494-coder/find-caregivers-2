@@ -1,0 +1,271 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #ffffff;
+  color: #2d2d2d;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 60px;
+  background: #fff;
+  border-bottom: 1px solid #f0eaf5;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #2d2d2d;
+}
+
+.logo svg {
+  width: 28px;
+  height: 28px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #888;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover {
+  color: #aa87e8;
+}
+
+.nav-links a.active {
+  color:#aa87e8 ;
+  border-bottom: 2px solid #7c3aed;
+}
+
+/* ===== MAIN ===== */
+main {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 24px;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 28px;
+  color: #1a1a1a;
+}
+
+/* ===== CAREGIVER CARD ===== */
+.caregiver-card {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  background: #faf7fd;
+  border-radius: 16px;
+  padding: 24px 32px;
+  margin-bottom: 18px;
+}
+
+.photo-placeholder {
+  width: 90px;
+  height: 90px;
+  border: 2px dashed #c4a9e0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #b89ed0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s;
+  overflow: hidden;
+}
+
+.photo-placeholder:hover {
+  background: #f0e8fa;
+}
+
+.photo-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.caregiver-info {
+  flex: 1;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.info-row label {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #2d2d2d;
+  min-width: 90px;
+}
+
+.info-row input {
+  flex: 1;
+  border: none;
+  border-bottom: 2px solid #c4a9e0;
+  background: transparent;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  color: #2d2d2d;
+  outline: none;
+  padding: 2px 4px;
+  min-width: 160px;
+  transition: border-color 0.2s;
+}
+
+.info-row input:focus {
+  border-bottom-color: #7c3aed;
+}
+
+/* ===== BOOK BUTTON ===== */
+.book-btn {
+  background: #7c3aed;
+  color: #fff;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  transition: background 0.2s, transform 0.1s;
+  flex-shrink: 0;
+  min-width: 110px;
+}
+
+.book-btn:hover {
+  background: #6d28d9;
+  transform: scale(1.03);
+}
+
+.book-btn:active {
+  transform: scale(0.97);
+}
+
+.book-btn.booked {
+  background: #16a34a;
+  cursor: default;
+  transform: none;
+}
+
+/* ===== EXPLORE SECTION ===== */
+.explore-section {
+  background: #faf7fd;
+  border-radius: 16px;
+  padding: 28px 32px;
+  margin-top: 10px;
+}
+
+.explore-section h2 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: #1a1a1a;
+}
+
+.explore-section ul {
+  list-style: none;
+}
+
+.explore-section ul li {
+  margin-bottom: 10px;
+}
+
+.explore-section ul li a {
+  text-decoration: none;
+  color: #2d2d2d;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.explore-section ul li a:hover {
+  color: #7c3aed;
+}
+
+/* ===== FOOTER ===== */
+.finalsection {
+  display: flex;
+  justify-content: space-between;
+  background: #cecbcb;
+  border-radius: 10px;
+  padding: 0 10px 0 10px;
+  margin-top: 40px;
+}
+
+.explore a {
+  display: block;
+  text-decoration: none;
+  color: purple;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.explore a:hover {
+  color: #000000;
+  padding-left: 5px;
+}
+
+.legal h4 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.legal a {
+  display: block;
+  text-decoration: none;
+  color: purple;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.legal a:hover {
+  color: #000000;
+  padding-left: 5px;
+}
+
+.rights {
+  background-color: rgb(133, 31, 251);
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.rights p {
+  font-style: italic;
+  font-size: 20px;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All Age Care</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">
+      <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 24s-10-6.5-10-13a6 6 0 0 1 10-4.47A6 6 0 0 1 24 11c0 6.5-10 13-10 13z" fill="#7c3aed"/>
+      </svg>
+      All Age Care
+    </div>
+    <ul class="nav-links">
+      <li><a href="#" class="nav-link active">Home</a></li>
+      <li><a href="#" class="nav-link">About Us</a></li>
+      <li><a href="#" class="nav-link">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN -->
+  <main>
+    <h1>Available Caregivers</h1>
+
+    <!-- Caregiver Card 1 -->
+    <div class="caregiver-card">
+      <div class="photo-placeholder" onclick="triggerUpload(this)">
+        <span class="add-photo-text">Add photo</span>
+        <input type="file" accept="image/*" style="display:none" onchange="previewPhoto(this)"/>
+      </div>
+      <div class="caregiver-info">
+        <div class="info-row">
+          <label>Name</label>
+          <input type="text" placeholder="Enter name"/>
+        </div>
+        <div class="info-row">
+          <label>Price/hour</label>
+          <input type="text" placeholder="Enter price"/>
+        </div>
+      </div>
+      <button class="book-btn" onclick="bookCaregiver(this)">Book</button>
+    </div>
+
+    <!-- Caregiver Card 2 -->
+    <div class="caregiver-card">
+      <div class="photo-placeholder" onclick="triggerUpload(this)">
+        <span class="add-photo-text">Add photo</span>
+        <input type="file" accept="image/*" style="display:none" onchange="previewPhoto(this)"/>
+      </div>
+      <div class="caregiver-info">
+        <div class="info-row">
+          <label>Name</label>
+          <input type="text" placeholder="Enter name"/>
+        </div>
+        <div class="info-row">
+          <label>Price/hour</label>
+          <input type="text" placeholder="Enter price"/>
+        </div>
+      </div>
+      <button class="book-btn" onclick="bookCaregiver(this)">Book</button>
+    </div>
+
+    <!-- Explore Section -->
+    <div class="explore-section">
+      <h2>Explore</h2>
+      <ul>
+        <li><a href="#">Find caregivers</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div class="finalsection">
+    <div class="explore">
+      <h4>Explore</h4>
+      <a href="../Log in/login.php">Services</a>
+      <a href="../About Us/index.php">About Us</a>
+      <a href="../Contact Us/index.php">Contact Us</a>
+    </div>
+    <div class="legal">
+      <h4>Legal</h4>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="accessibility.html">Accessibility</a>
+    </div>
+  </div>
+
+  <div class="rights">
+    <p>© 2026, All Age Care EG.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
